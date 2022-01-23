@@ -5,6 +5,7 @@ import Data from './data.xml';
 import Notes from './data.csv';
 
 function component() {
+
   const element = document.createElement('div');
 
   // Lodash, now imported by this script
@@ -23,4 +24,7 @@ function component() {
   return element;
 }
 
+setTimeout(() => {
 document.body.appendChild(component());
+
+}, 3000)
