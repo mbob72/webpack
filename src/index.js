@@ -24,7 +24,6 @@ function component() {
   return element;
 }
 
-setTimeout(() => {
 document.body.appendChild(component());
 
-}, 3000)
+

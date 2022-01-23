@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "serve dist"
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack build"
   },
   "keywords": [],
   "author": "",
