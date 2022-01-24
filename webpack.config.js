@@ -6,6 +6,16 @@ module.exports = {
     entry: {
         index:  './src/index.js',
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Caching',
+        })
+    ],
+    output: {
+        filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
+    },
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
@@ -34,9 +44,4 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Now from template'
-        })
-    ],
 };
